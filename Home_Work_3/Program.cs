@@ -4,10 +4,12 @@
 5 -> 1, 8, 27, 64, 125 */
 
 Console.Clear();
-Console.Write("Введите число N: ");
-int N = int.Parse(Console.ReadLine());
+Console.Write("Введите число : ");
+int Num = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите степень числа: ");
+int stepen = int.Parse(Console.ReadLine());
 
-for(int i = 1; i <= N; i++)
+for(int i = 1; i <= Num; i++)
 {
-Console.Write($"{Math.Pow(i, 3)} ");
+Console.Write($"{Math.Pow(i, stepen)} ");
 }
